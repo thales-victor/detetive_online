@@ -1,4 +1,4 @@
-interface Autentication {
+export interface Autentication {
   name: string;
   character: {
     id: number;

@@ -1,12 +1,6 @@
 import React from 'react';
+import { Dialog, DialogTitle, DialogContent, DialogActions, Button } from '@material-ui/core';
 
-import {
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
-  Button
-} from '@material-ui/core';
 
 interface Props {
   title: string;
