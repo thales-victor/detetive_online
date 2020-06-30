@@ -2,16 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import { getToken, Autentication } from '../../services/localStorage';
 import { useHistory } from 'react-router-dom';
-import io from 'socket.io-client';
+import { socket } from '../../services/socket/socket';
 
-// import { Container } from './styles';
+
 
 const Game: React.FC = () => {
   const [user, setUser] = useState<Autentication>()
 
-  const history = useHistory();
-  const socket = io('http://localhost:3001');
-  
+  const history = useHistory();  
 
   useEffect(() => {
     getUserToken();
@@ -29,10 +27,17 @@ const Game: React.FC = () => {
 
   const startSocket = () => {
     socket.on('connect', onConnect);
+    socket.on('novoJogador', novoJogadorConnected);
+
   }
 
   const onConnect = () => {
-    console.log(socket.id);
+    if (socket.connected) {
+      console.log(socket.id);
+    }
+  }
+  const novoJogadorConnected = (command: any) => {
+    console.log('novo jogador conectado: ', command);
   }
 
   return (
