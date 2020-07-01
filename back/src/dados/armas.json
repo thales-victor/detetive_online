@@ -1,26 +1,32 @@
 [
   {
-    "id": "0",
-    "nome": "Faca"
+    "id": 0,
+    "nome": "Faca",
+    "imagem": ""
   },
   {
-    "id": "1",
-    "nome": "Castiçal"
+    "id": 1,
+    "nome": "Castiçal",
+    "imagem": ""
   },
   {
-    "id": "2",
-    "nome": "Revólver"
+    "id": 2,
+    "nome": "Revólver",
+    "imagem": ""
   },
   {
-    "id": "3",
-    "nome": "Corda"
+    "id": 3,
+    "nome": "Corda",
+    "imagem": ""
   },
   {
-    "id": "4",
-    "nome": "Cano de Chumbo"
+    "id": 4,
+    "nome": "Cano de Chumbo",
+    "imagem": ""
   },
   {
-    "id": "5",
-    "nome": "Chave Inglesa"
+    "id": 5,
+    "nome": "Chave Inglesa",
+    "imagem": ""
   }
 ]

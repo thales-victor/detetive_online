@@ -1,20 +1,27 @@
 import * as mongoose from 'mongoose';
-import { jogadorInterface } from './interfaces/jogadorInterface';
+import { jogoInterface } from './interfaces/jogoInteface';
 
-// const JogadorSchema = new mongoose.Schema({
-//   nome: {
-//     type: String,
-//     required: true
-//   },
-//   personagem: {
-//     type: Number,
-//     required: true
-//   },
-//   fezAcusacao: {
-//     type: Boolean,
-//     required: true,
-//     default: false
-//   }
-// });
+const JogoSchema = new mongoose.Schema({
+  crime: {
+    type: Object,
+    required: true
+  },
+  jogadores: {
+    type: Array,
+    required: true
+  },
+  jogadas: {
+    type: Array,
+    required: true
+  },
+  provas: {
+    type: Array,
+    required: true
+  },
+  vencedor: {
+    type: Object,
+    required: false
+  }
+});
 
-// export default mongoose.model<jogadorInterface>('Jogador', JogadorSchema)
+export default mongoose.model<jogoInterface>('Jogo', JogoSchema)

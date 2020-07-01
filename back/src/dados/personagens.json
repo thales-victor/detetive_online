@@ -1,38 +1,44 @@
 [
   {
-    "id": "0",
+    "id": 0,
     "nome": "Cel. Mustard",
     "linhaInicio": "",
-    "colunaInicio": ""
+    "colunaInicio": "",
+    "imagem": ""
   },
   {
-    "id": "1",
+    "id": 1,
     "nome": "Prof. Plum",
     "linhaInicio": "",
-    "colunaInicio": ""
+    "colunaInicio": "",
+    "imagem": ""
   },
   {
-    "id": "2",
+    "id": 2,
     "nome": "Rev. Green",
     "linhaInicio": "",
-    "colunaInicio": ""
+    "colunaInicio": "",
+    "imagem": ""
   },
   {
-    "id": "3",
+    "id": 3,
     "nome": "Sra. Peacock",
     "linhaInicio": "",
-    "colunaInicio": ""
+    "colunaInicio": "",
+    "imagem": ""
   },
   {
-    "id": "4",
+    "id": 4,
     "nome": "Srta. Scarlet",
     "linhaInicio": "",
-    "colunaInicio": ""
+    "colunaInicio": "",
+    "imagem": ""
   },
   {
-    "id": "5",
+    "id": 5,
     "nome": "Sra. White",
     "linhaInicio": "",
-    "colunaInicio": ""
+    "colunaInicio": "",
+    "imagem": ""
   }
 ]

@@ -1,38 +1,47 @@
 [
   {
-    "id": "0",
-    "nome": "Entrada"
+    "id": 0,
+    "nome": "Entrada",
+    "imagem": ""
   },
   {
-    "id": "1",
-    "nome": "Sala de Estar"
+    "id": 1,
+    "nome": "Sala de Estar",
+    "imagem": ""
   },
   {
-    "id": "2",
-    "nome": "Sala de Jantar"
+    "id": 2,
+    "nome": "Sala de Jantar",
+    "imagem": ""
   },
   {
-    "id": "3",
-    "nome": "Cozinha"
+    "id": 3,
+    "nome": "Cozinha",
+    "imagem": ""
   },
   {
-    "id": "4",
-    "nome": "Sala de Música"
+    "id": 4,
+    "nome": "Sala de Música",
+    "imagem": ""
   },
   {
-    "id": "5",
-    "nome": "Jardim de Inverno"
+    "id": 5,
+    "nome": "Jardim de Inverno",
+    "imagem": ""
   },
   {
-    "id": "6",
-    "nome": "Salão de Jogos"
+    "id": 6,
+    "nome": "Salão de Jogos",
+    "imagem": ""
   },
   {
-    "id": "7",
-    "nome": "Biblioteca"
+    "id": 7,
+    "nome": "Biblioteca",
+    "imagem": ""
   },
   {
-    "id": "8",
-    "nome": "Escritório"
+    "id": 8,
+    "nome": "Escritório",
+    "imagem": ""
   }
 ]

@@ -1,19 +1,18 @@
 
-import { jogador } from './jogadorInterface';
-import { rodada } from './rodadaInteface';
-import { crime } from './crimeInteface';
 import { Document } from 'mongoose';
+import crime from '../../domain/crime';
+import jogador from '../../domain/jogador';
+import rodada from '../../domain/rodada';
+import comodo from '../../../enum/comodo';
+import personagem from '../../../enum/personagem';
+import arma from '../../../enum/arma';
 
-export interface jogo {
-  _id: number;
-  crime: crime;
-  jogadores: jogador[]
-  jogadas: rodada[]
-}
 
 export interface jogoInterface extends Document {
-  _id: number;
+  id: number;
   crime: crime;
-  jogadores: jogador[]
-  jogadas: rodada[]
+  jogadores: jogador[];
+  jogadas: rodada[];
+  provas: (comodo | personagem | arma)[];
+  vencedor?: jogador;
 }
