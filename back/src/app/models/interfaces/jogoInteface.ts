@@ -9,7 +9,9 @@ import arma from '../../../enum/arma';
 
 
 export interface jogoInterface extends Document {
-  id: number;
+  _id: string;
+  sala: string;
+  senha: string;
   crime: crime;
   jogadores: jogador[];
   jogadas: rodada[];

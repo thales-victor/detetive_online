@@ -2,6 +2,14 @@ import * as mongoose from 'mongoose';
 import { jogoInterface } from './interfaces/jogoInteface';
 
 const JogoSchema = new mongoose.Schema({
+  sala: {
+    type: String,
+    required: true,
+  },
+  senha: {
+    type: String,
+    required: true,
+  },
   crime: {
     type: Object,
     required: true

@@ -5,22 +5,26 @@ import comodo, { obterComodos } from "../../enum/comodo";
 import personagem, { obterPersonagens } from "../../enum/personagem";
 import arma, { obterArmas } from "../../enum/arma";
 import GerarNumeroAleatorio from "../utils/random";
-import JogadorSchema from '../models/jogador';
+import JogoSchema from '../models/jogo';
 
 export default class jogo {
-  id: number;
+  _id: string;
+  sala: string;
+  senha: string;
   crime: crime;
   jogadores: jogador[];
   jogadas: rodada[];
   provas: (comodo | personagem | arma)[];
   vencedor?: jogador;
 
-  constructor(jogador: jogador) {
+  constructor(sala: string, senha: string, jogador: jogador) {
+    this.sala = sala,
+    this.senha = senha,
     this.crime = new crime();
-    this.jogadores = [];
+    this.jogadores = [jogador];
     this.jogadas = [];
     this.provas = [];
-    this.incluirJogador(jogador);
+    JogoSchema.create(this);
   }
 
   comecarPartida() {
@@ -36,7 +40,7 @@ export default class jogo {
   incluirJogador(jogador: jogador) {
     if (this.jogadores.length < 6) {
       this.jogadores.push(jogador);
-      this._salvarJogador(jogador);
+      this.salvar();
       return true;
     }
     return false;
@@ -46,8 +50,8 @@ export default class jogo {
     this.jogadas.push(rodada);
   }
 
-  _salvarJogador(jogador: jogador) {
-    JogadorSchema.create(jogador);
+  salvar() {
+    JogoSchema.findByIdAndUpdate(this._id, this, { new: true });
   }
 
   _pegarPrimeiroJogador() {
